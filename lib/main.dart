@@ -20,11 +20,11 @@ class ShowcaseApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Showcase',
       themeMode: ThemeMode.dark,
-      theme: ThemeData(
+      darkTheme: ThemeData(
         useMaterial3: true,
         brightness: Brightness.dark,
         scaffoldBackgroundColor: const Color(0xFF0B1020),
-        textTheme: GoogleFonts.poppinsTextTheme(),
+        textTheme: GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme),
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.cyanAccent,
           brightness: Brightness.dark,

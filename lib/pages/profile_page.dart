@@ -10,6 +10,8 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+          title: Text("Perfil"), backgroundColor: Color.fromARGB(0, 0, 0, 0)),
       body: Stack(
         children: [
           Container(
@@ -21,7 +23,6 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
           ),
-
           Center(
             child: ClipRRect(
               borderRadius: BorderRadius.circular(30),
@@ -50,9 +51,7 @@ class ProfilePage extends StatelessWidget {
                           ),
                         ),
                       ),
-
                       const SizedBox(height: 20),
-
                       const Text(
                         "Flutter Developer",
                         style: TextStyle(
@@ -60,17 +59,13 @@ class ProfilePage extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-
                       const SizedBox(height: 12),
-
                       const Text(
                         "Android • iOS • Web • Desktop",
                         textAlign: TextAlign.center,
                         style: TextStyle(color: Colors.white70),
                       ),
-
                       const SizedBox(height: 30),
-
                       ElevatedButton.icon(
                         onPressed: () {},
                         icon: const Icon(Icons.code),

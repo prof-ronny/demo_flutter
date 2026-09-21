@@ -19,7 +19,6 @@ class DashboardPage extends StatelessWidget {
                 child: Text(
                   "Flutter Showcase",
                   style: TextStyle(
-                    color: Colors.white,
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
                   ),
